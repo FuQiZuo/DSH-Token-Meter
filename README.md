@@ -1,5 +1,11 @@
 # DSH Token Meter
 
+<!-- README-I18N:START -->
+
+**English** | [汉语](./README.zh.md)
+
+<!-- README-I18N:END -->
+
 **Token Meter** — a token-usage tracking plugin for DeepSeek Harness (DSH).
 
 A floating panel mounted over `shell.overlay` in the bottom-right corner. It shows both the **current session** (input / output / cache hit / cache miss / total) and **all sessions** (cumulative input / cumulative output / cumulative hit / cumulative miss). Pure client-side plugin: it does not modify application code — it only registers one panel and one settings page.

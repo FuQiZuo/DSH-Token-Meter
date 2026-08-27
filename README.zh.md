@@ -1,5 +1,11 @@
 # DSH Token Meter
 
+<!-- README-I18N:START -->
+
+[English](./README.md) | **汉语**
+
+<!-- README-I18N:END -->
+
 **Token 计量表** — DeepSeek Harness（DSH）的 token 用量计量插件。
 
 一个挂在右下角 `shell.overlay` 的浮动面板，同时展示 **当前会话**（输入 / 输出 / 命中缓存 / 未命中缓存 / 总 token）与 **全部会话**（累计输入 / 累计输出 / 累计命中 / 累计未命中）。纯客户端插件：不改动应用代码，只注册一个面板 + 一个设置页。
