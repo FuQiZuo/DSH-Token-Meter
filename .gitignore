@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Build scratch produced by local tsc/tsdown runs (the published client.js bundle is committed)
+dist/
+lib/
+*.tsbuildinfo
