@@ -67,7 +67,7 @@ client.js          浏览器端全部实现（面板 + 设置页 + 免责声明 
 index.js           Host 半部，空实现（Token Meter 是纯客户端的）
 cordis.patch.yml   安装时把插件行挂进 bundle 栈
 src/               TypeScript 源码（client.js 由 DSH 构建链打包生成）
-README.zh.md        本文档（英文见 README.md）
+README.zh.md        本文档（英文见 README.en.md）
 ```
 
 ## 开发与维护
