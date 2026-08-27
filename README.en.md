@@ -67,7 +67,7 @@ client.js          All browser-side implementation (panel + settings + disclaime
 index.js           Host half, empty (the Token Meter is pure client-side)
 cordis.patch.yml   Mounts the plugin row into the bundle stack on install
 src/               TypeScript source (client.js is bundled by the DSH build chain)
-README.md          This file (中文见 README.zh.md)
+README.md          This file (中文见 README.md)
 ```
 
 ## Development and maintenance
