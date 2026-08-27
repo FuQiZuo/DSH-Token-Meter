@@ -2,7 +2,7 @@
 
 <!-- README-I18N:START -->
 
-[English](./README.md) | **简体中文**
+[English](./README.en.md) | **简体中文**
 
 <!-- README-I18N:END -->
 
