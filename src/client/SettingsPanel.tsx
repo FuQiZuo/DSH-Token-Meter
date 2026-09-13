@@ -54,6 +54,22 @@ export function SettingsPanel(props: SettingsPanelProps): React.ReactNode {
       <div className={css.setTitle}>{t('settingsTitle')}</div>
 
       <div className={css.setBlock}>
+        <div className={css.setGroupTitle}>{t('enable')}</div>
+        <button
+          type="button"
+          role="switch"
+          aria-checked={settings.enabled}
+          aria-label={t('enable')}
+          className={css.switch + (settings.enabled ? ` ${css.switchOn}` : '')}
+          onClick={() => set('enabled', !settings.enabled)}
+        >
+          <span className={css.switchTrack}><span className={css.switchKnob} /></span>
+          <span>{settings.enabled ? t('on') : t('off')}</span>
+        </button>
+      </div>
+      <div className={css.divider} />
+
+      <div className={css.setBlock}>
         <div className={css.setGroupTitle}>{t('mode')}</div>
         {Blocks<TokenMeterSettings['mode']>(
           [{ value: 'live', label: t('live') }, { value: 'dc', label: t('dc') }],

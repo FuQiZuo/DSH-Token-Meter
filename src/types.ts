@@ -22,6 +22,8 @@ export type MeterTextSize = 'small' | 'medium' | 'large'
 
 /** Persisted settings for the Token Meter. */
 export interface TokenMeterSettings {
+  /** Master switch: when false the floating panel is not rendered at all. */
+  enabled: boolean
   mode: MeterMode
   lang: MeterLang
   /** 0-100 panel transparency (100 = fully clear). */
@@ -31,6 +33,7 @@ export interface TokenMeterSettings {
 
 /** The defaults every field falls back to. */
 export const DEFAULT_SETTINGS: TokenMeterSettings = {
+  enabled: true,
   mode: 'live',
   lang: 'zh',
   transparent: 60,

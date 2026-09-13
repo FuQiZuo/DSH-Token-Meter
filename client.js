@@ -51685,7 +51685,7 @@ ${" ".repeat(indent)}}`;
 		}
 		//#endregion
 		//#region \0dsh-css:src\client\panel.module.css.mjs
-		const css = "._3TsUka_panel{z-index:2147483000;border:1px solid var(--dsw-alias-label-tertiary);color:var(--dsw-alias-label-primary);pointer-events:auto;backdrop-filter:blur(6px);border-radius:14px;flex-direction:column;gap:6px;min-width:240px;padding:14px 16px;font-size:14px;line-height:1.6;display:flex;position:fixed;bottom:20px;right:20px;box-shadow:0 6px 24px #0006}._3TsUka_head{margin-bottom:3px;font-size:15px;font-weight:700}._3TsUka_groupTitle{color:var(--dsw-alias-label-caption);margin-top:2px;font-size:12px}._3TsUka_row{justify-content:space-between;align-items:center;gap:12px;display:flex}._3TsUka_label{color:var(--dsw-alias-label-secondary)}._3TsUka_value{font-variant-numeric:tabular-nums;font-size:14px}._3TsUka_est{color:var(--dsw-alias-state-warn-primary)}._3TsUka_divider{background:var(--dsw-alias-border-l1);border-radius:2px;height:1px;margin:8px 0}._3TsUka_settings{color:var(--dsw-alias-label-secondary);flex-direction:column;gap:4px;font-size:14px;display:flex}._3TsUka_setTitle{color:var(--dsw-alias-label-primary);margin-bottom:2px;font-size:15px;font-weight:700}._3TsUka_setBlock{flex-direction:column;gap:8px;padding:4px 0;display:flex}._3TsUka_setGroupTitle{color:var(--dsw-alias-label-primary);align-items:center;gap:6px;font-size:14px;font-weight:600;display:flex}._3TsUka_seg{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-interactive-bg-hover);border-radius:10px;gap:2px;padding:2px;display:flex}._3TsUka_segBtn{color:var(--dsw-alias-label-secondary);cursor:pointer;white-space:nowrap;background:0 0;border:0;border-radius:8px;flex:1;justify-content:center;align-items:center;padding:7px 10px;font-size:13px;transition:background .15s,color .15s;display:inline-flex}._3TsUka_segActive{background:var(--dsw-alias-state-business-primary);color:var(--dsw-alias-label-primary-foreground);font-weight:600}._3TsUka_slider{align-items:center;gap:10px;display:flex}._3TsUka_sliderLabel{color:var(--dsw-alias-label-secondary);white-space:nowrap;font-size:13px}._3TsUka_sliderValue{color:var(--dsw-alias-label-tertiary);align-self:flex-end;font-size:13px}._3TsUka_slider input[type=range]{-webkit-appearance:none;appearance:none;background:var(--dsw-alias-border-l2);cursor:pointer;height:6px;accent-color:var(--dsw-alias-state-business-primary);border-radius:6px;outline:none;flex:1}._3TsUka_slider input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;background:var(--dsw-alias-state-business-primary);border:2px solid var(--dsw-alias-label-primary-foreground);cursor:pointer;border-radius:50%;width:18px;height:18px;box-shadow:0 1px 4px #0000004d}._3TsUka_slider input[type=range]::-moz-range-thumb{background:var(--dsw-alias-state-business-primary);border:2px solid var(--dsw-alias-label-primary-foreground);cursor:pointer;border-radius:50%;width:18px;height:18px}._3TsUka_slider input[type=range]::-moz-range-track{background:var(--dsw-alias-border-l2);border-radius:6px;height:6px}._3TsUka_info{width:18px;height:18px;color:var(--dsw-alias-label-primary-foreground);background:var(--dsw-alias-interactive-bg-hover);border:1px solid var(--dsw-alias-border-l2);cursor:pointer;vertical-align:middle;border-radius:50%;justify-content:center;align-items:center;padding:0;font-size:12px;display:inline-flex}._3TsUka_modalBg{z-index:2147483647;pointer-events:auto;background:#00000080;justify-content:center;align-items:center;display:flex;position:fixed;inset:0}._3TsUka_modal{background:var(--dsw-alias-bg-layer-2);border:1px solid var(--dsw-alias-border-l2);max-width:460px;color:var(--dsw-alias-label-primary);border-radius:14px;padding:24px 28px;position:relative;box-shadow:0 8px 30px #00000080}._3TsUka_modalClose{cursor:pointer;color:var(--dsw-alias-label-tertiary);font-size:20px;position:absolute;top:12px;right:16px}._3TsUka_modalBody{color:var(--dsw-alias-label-secondary);white-space:normal;font-size:14px;line-height:1.8}";
+		const css = "._3TsUka_panel{z-index:2147483000;border:1px solid var(--dsw-alias-label-tertiary);color:var(--dsw-alias-label-primary);pointer-events:auto;backdrop-filter:blur(6px);border-radius:14px;flex-direction:column;gap:6px;min-width:240px;padding:14px 16px;font-size:14px;line-height:1.6;display:flex;position:fixed;bottom:20px;right:20px;box-shadow:0 6px 24px #0006}._3TsUka_head{justify-content:space-between;align-items:center;gap:12px;margin-bottom:3px;font-size:15px;font-weight:700;display:flex}._3TsUka_power{border:1px solid var(--dsw-alias-border-l2);width:20px;height:20px;color:var(--dsw-alias-label-tertiary);cursor:pointer;background:0 0;border-radius:6px;justify-content:center;align-items:center;padding:0;font-size:12px;line-height:1;transition:background .15s,color .15s;display:inline-flex}._3TsUka_power:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}._3TsUka_groupTitle{color:var(--dsw-alias-label-caption);margin-top:2px;font-size:12px}._3TsUka_row{justify-content:space-between;align-items:center;gap:12px;display:flex}._3TsUka_label{color:var(--dsw-alias-label-secondary)}._3TsUka_value{font-variant-numeric:tabular-nums;font-size:14px}._3TsUka_est{color:var(--dsw-alias-state-warn-primary)}._3TsUka_divider{background:var(--dsw-alias-border-l1);border-radius:2px;height:1px;margin:8px 0}._3TsUka_settings{color:var(--dsw-alias-label-secondary);flex-direction:column;gap:4px;font-size:14px;display:flex}._3TsUka_setTitle{color:var(--dsw-alias-label-primary);margin-bottom:2px;font-size:15px;font-weight:700}._3TsUka_setBlock{flex-direction:column;gap:8px;padding:4px 0;display:flex}._3TsUka_setGroupTitle{color:var(--dsw-alias-label-primary);align-items:center;gap:6px;font-size:14px;font-weight:600;display:flex}._3TsUka_switch{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-secondary);cursor:pointer;border-radius:10px;align-self:flex-start;align-items:center;gap:10px;padding:6px 10px;font-size:13px;transition:background .15s,border-color .15s,color .15s;display:inline-flex}._3TsUka_switchOn{color:var(--dsw-alias-label-primary);border-color:var(--dsw-alias-state-business-primary)}._3TsUka_switchTrack{background:var(--dsw-alias-border-l2);border-radius:9px;flex:none;width:34px;height:18px;transition:background .15s;position:relative}._3TsUka_switchOn ._3TsUka_switchTrack{background:var(--dsw-alias-state-business-primary)}._3TsUka_switchKnob{background:var(--dsw-alias-label-primary-foreground);border-radius:50%;width:14px;height:14px;transition:transform .15s;position:absolute;top:2px;left:2px}._3TsUka_switchOn ._3TsUka_switchKnob{transform:translate(16px)}._3TsUka_seg{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-interactive-bg-hover);border-radius:10px;gap:2px;padding:2px;display:flex}._3TsUka_segBtn{color:var(--dsw-alias-label-secondary);cursor:pointer;white-space:nowrap;background:0 0;border:0;border-radius:8px;flex:1;justify-content:center;align-items:center;padding:7px 10px;font-size:13px;transition:background .15s,color .15s;display:inline-flex}._3TsUka_segActive{background:var(--dsw-alias-state-business-primary);color:var(--dsw-alias-label-primary-foreground);font-weight:600}._3TsUka_slider{align-items:center;gap:10px;display:flex}._3TsUka_sliderLabel{color:var(--dsw-alias-label-secondary);white-space:nowrap;font-size:13px}._3TsUka_sliderValue{color:var(--dsw-alias-label-tertiary);align-self:flex-end;font-size:13px}._3TsUka_slider input[type=range]{-webkit-appearance:none;appearance:none;background:var(--dsw-alias-border-l2);cursor:pointer;height:6px;accent-color:var(--dsw-alias-state-business-primary);border-radius:6px;outline:none;flex:1}._3TsUka_slider input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;background:var(--dsw-alias-state-business-primary);border:2px solid var(--dsw-alias-label-primary-foreground);cursor:pointer;border-radius:50%;width:18px;height:18px;box-shadow:0 1px 4px #0000004d}._3TsUka_slider input[type=range]::-moz-range-thumb{background:var(--dsw-alias-state-business-primary);border:2px solid var(--dsw-alias-label-primary-foreground);cursor:pointer;border-radius:50%;width:18px;height:18px}._3TsUka_slider input[type=range]::-moz-range-track{background:var(--dsw-alias-border-l2);border-radius:6px;height:6px}._3TsUka_info{width:18px;height:18px;color:var(--dsw-alias-label-primary-foreground);background:var(--dsw-alias-interactive-bg-hover);border:1px solid var(--dsw-alias-border-l2);cursor:pointer;vertical-align:middle;border-radius:50%;justify-content:center;align-items:center;padding:0;font-size:12px;display:inline-flex}._3TsUka_modalBg{z-index:2147483647;pointer-events:auto;background:#00000080;justify-content:center;align-items:center;display:flex;position:fixed;inset:0}._3TsUka_modal{background:var(--dsw-alias-bg-layer-2);border:1px solid var(--dsw-alias-border-l2);max-width:460px;color:var(--dsw-alias-label-primary);border-radius:14px;padding:24px 28px;position:relative;box-shadow:0 8px 30px #00000080}._3TsUka_modalClose{cursor:pointer;color:var(--dsw-alias-label-tertiary);font-size:20px;position:absolute;top:12px;right:16px}._3TsUka_modalBody{color:var(--dsw-alias-label-secondary);white-space:normal;font-size:14px;line-height:1.8}";
 		const tagId = "dsh-token-meter/panel.module.css";
 		if (typeof document !== "undefined" && document.querySelector("style[data-plugin-css=" + JSON.stringify(tagId) + "]") === null) {
 			const tag = document.createElement("style");
@@ -51695,29 +51695,34 @@ ${" ".repeat(indent)}}`;
 			document.head.appendChild(tag);
 		}
 		var panel_module_css_default = {
-			"sliderValue": "_3TsUka_sliderValue",
-			"label": "_3TsUka_label",
-			"segBtn": "_3TsUka_segBtn",
-			"sliderLabel": "_3TsUka_sliderLabel",
-			"modal": "_3TsUka_modal",
-			"modalBody": "_3TsUka_modalBody",
-			"segActive": "_3TsUka_segActive",
-			"row": "_3TsUka_row",
-			"info": "_3TsUka_info",
-			"panel": "_3TsUka_panel",
-			"head": "_3TsUka_head",
-			"settings": "_3TsUka_settings",
-			"groupTitle": "_3TsUka_groupTitle",
-			"setTitle": "_3TsUka_setTitle",
 			"value": "_3TsUka_value",
-			"setGroupTitle": "_3TsUka_setGroupTitle",
-			"setBlock": "_3TsUka_setBlock",
+			"head": "_3TsUka_head",
 			"divider": "_3TsUka_divider",
-			"est": "_3TsUka_est",
+			"settings": "_3TsUka_settings",
+			"segBtn": "_3TsUka_segBtn",
+			"modalClose": "_3TsUka_modalClose",
 			"slider": "_3TsUka_slider",
-			"modalBg": "_3TsUka_modalBg",
+			"setTitle": "_3TsUka_setTitle",
+			"switchOn": "_3TsUka_switchOn",
+			"switch": "_3TsUka_switch",
+			"panel": "_3TsUka_panel",
+			"switchKnob": "_3TsUka_switchKnob",
 			"seg": "_3TsUka_seg",
-			"modalClose": "_3TsUka_modalClose"
+			"sliderLabel": "_3TsUka_sliderLabel",
+			"segActive": "_3TsUka_segActive",
+			"sliderValue": "_3TsUka_sliderValue",
+			"groupTitle": "_3TsUka_groupTitle",
+			"info": "_3TsUka_info",
+			"label": "_3TsUka_label",
+			"modalBg": "_3TsUka_modalBg",
+			"switchTrack": "_3TsUka_switchTrack",
+			"modal": "_3TsUka_modal",
+			"setBlock": "_3TsUka_setBlock",
+			"est": "_3TsUka_est",
+			"row": "_3TsUka_row",
+			"power": "_3TsUka_power",
+			"modalBody": "_3TsUka_modalBody",
+			"setGroupTitle": "_3TsUka_setGroupTitle"
 		};
 		//#endregion
 		//#region lib/types/client/MeterPanel.js
@@ -51760,6 +51765,7 @@ ${" ".repeat(indent)}}`;
 		function MeterPanel(props) {
 			const { useSessions, store, readPartial, t } = props;
 			const settings = useStore$1(store);
+			const enabled = settings.enabled;
 			const byId = useSessions((s) => s.byId);
 			const current = useSessions((s) => s.current);
 			const [live, setLive] = (0, react.useState)({
@@ -51773,6 +51779,7 @@ ${" ".repeat(indent)}}`;
 				output: 0
 			});
 			(0, react.useEffect)(() => {
+				if (!enabled) return;
 				if (current === void 0) {
 					setLive({
 						input: 0,
@@ -51827,7 +51834,11 @@ ${" ".repeat(indent)}}`;
 					open = false;
 					clearInterval(timer);
 				};
-			}, [current, readPartial]);
+			}, [
+				current,
+				readPartial,
+				enabled
+			]);
 			const base = current !== void 0 && byId !== void 0 ? readBuckets(byId[current]?.projectionValues?.tokenUsage) : {
 				input: 0,
 				output: 0,
@@ -51859,13 +51870,21 @@ ${" ".repeat(indent)}}`;
 				backdropFilter: alpha > .05 ? "blur(6px)" : "none"
 			};
 			const est = inLive + outLive > 0 || justCalibrated;
+			if (!enabled) return null;
 			return (0, react_jsx_runtime.jsxs)("div", {
 				className: panel_module_css_default.panel,
 				style: panelStyle,
 				children: [
-					(0, react_jsx_runtime.jsx)("div", {
+					(0, react_jsx_runtime.jsxs)("div", {
 						className: panel_module_css_default.head,
-						children: t("title")
+						children: [(0, react_jsx_runtime.jsx)("span", { children: t("title") }), (0, react_jsx_runtime.jsx)("button", {
+							type: "button",
+							className: panel_module_css_default.power,
+							title: t("hide"),
+							"aria-label": t("hide"),
+							onClick: () => store.set("enabled", false),
+							children: "✕"
+						})]
 					}),
 					(0, react_jsx_runtime.jsx)("div", {
 						className: panel_module_css_default.groupTitle,
@@ -52013,6 +52032,25 @@ ${" ".repeat(indent)}}`;
 						className: panel_module_css_default.setBlock,
 						children: [(0, react_jsx_runtime.jsx)("div", {
 							className: panel_module_css_default.setGroupTitle,
+							children: t("enable")
+						}), (0, react_jsx_runtime.jsxs)("button", {
+							type: "button",
+							role: "switch",
+							"aria-checked": settings.enabled,
+							"aria-label": t("enable"),
+							className: panel_module_css_default.switch + (settings.enabled ? ` ${panel_module_css_default.switchOn}` : ""),
+							onClick: () => set("enabled", !settings.enabled),
+							children: [(0, react_jsx_runtime.jsx)("span", {
+								className: panel_module_css_default.switchTrack,
+								children: (0, react_jsx_runtime.jsx)("span", { className: panel_module_css_default.switchKnob })
+							}), (0, react_jsx_runtime.jsx)("span", { children: settings.enabled ? t("on") : t("off") })]
+						})]
+					}),
+					(0, react_jsx_runtime.jsx)("div", { className: panel_module_css_default.divider }),
+					(0, react_jsx_runtime.jsxs)("div", {
+						className: panel_module_css_default.setBlock,
+						children: [(0, react_jsx_runtime.jsx)("div", {
+							className: panel_module_css_default.setGroupTitle,
 							children: t("mode")
 						}), Blocks([{
 							value: "live",
@@ -52146,6 +52184,7 @@ ${" ".repeat(indent)}}`;
 		*/
 		/** The defaults every field falls back to. */
 		const DEFAULT_SETTINGS = {
+			enabled: true,
 			mode: "live",
 			lang: "zh",
 			transparent: 60,
@@ -52168,6 +52207,7 @@ ${" ".repeat(indent)}}`;
 			const rec = raw;
 			const transparent = typeof rec.transparent === "number" && Number.isFinite(rec.transparent) ? Math.min(100, Math.max(0, Math.round(rec.transparent))) : DEFAULT_SETTINGS.transparent;
 			return {
+				enabled: rec.enabled !== false,
 				mode: rec.mode === "dc" ? "dc" : "live",
 				lang: rec.lang === "en" ? "en" : "zh",
 				transparent,
@@ -52249,7 +52289,11 @@ ${" ".repeat(indent)}}`;
 			large: "大",
 			noData: "—",
 			disclaimerTitle: "免责声明",
-			disclaimer: "说明：实时显示的 token 基于本地分词器实时统计运算，会出现误差（尤其是包含思考链路的输入 token），在请求结束后返回用量时会进行自动校准。本地分词器计算的 token 用量仅供参考。"
+			disclaimer: "说明：实时显示的 token 基于本地分词器实时统计运算，会出现误差（尤其是包含思考链路的输入 token），在请求结束后返回用量时会进行自动校准。本地分词器计算的 token 用量仅供参考。",
+			enable: "开启计量表",
+			on: "已开启",
+			off: "已关闭",
+			hide: "隐藏面板（可在设置中重新开启）"
 		};
 		const en = {
 			title: "Token Meter",
@@ -52278,7 +52322,11 @@ ${" ".repeat(indent)}}`;
 			large: "Large",
 			noData: "—",
 			disclaimerTitle: "Disclaimer",
-			disclaimer: "Note: the tokens shown in real time are computed by the local tokeniser and will deviate from the real usage, especially for input tokens that include the reasoning chain. Usage is auto-calibrated once the request finishes. The local-tokeniser numbers are for reference only."
+			disclaimer: "Note: the tokens shown in real time are computed by the local tokeniser and will deviate from the real usage, especially for input tokens that include the reasoning chain. Usage is auto-calibrated once the request finishes. The local-tokeniser numbers are for reference only.",
+			enable: "Enable meter",
+			on: "On",
+			off: "Off",
+			hide: "Hide panel (re-enable in Settings)"
 		};
 		//#endregion
 		//#region lib/types/client/index.js

@@ -26,6 +26,9 @@ export function normalizeSettings(raw: unknown): TokenMeterSettings {
     ? Math.min(100, Math.max(0, Math.round(rec.transparent)))
     : DEFAULT_SETTINGS.transparent
   return {
+    // Defaults to ON: only an explicit `false` switches the meter off, so a
+    // settings object persisted before this field existed stays enabled.
+    enabled: rec.enabled !== false,
     mode: rec.mode === 'dc' ? 'dc' : 'live',
     lang: rec.lang === 'en' ? 'en' : 'zh',
     transparent,

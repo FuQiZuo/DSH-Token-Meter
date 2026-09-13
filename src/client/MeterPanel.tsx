@@ -60,13 +60,16 @@ function useStore(store: MeterPanelInjected['store']): TokenMeterSettings {
 export function MeterPanel(props: MeterPanelProps): React.ReactNode {
   const { useSessions, store, readPartial, t } = props
   const settings = useStore(store)
+  // Master switch: when off the panel renders nothing and stops polling the
+  // streamed partial entirely, so a hidden meter does no background work.
+  const enabled = settings.enabled
   const byId = useSessions(s => s.byId)
   const current = useSessions(s => s.current)
 
-  // Live in-flight delta, recomputed every second. The output token climbs by a
-  // smooth random step (100-130 per tick) rather than jumping to a tokenizer
-  // value, so the number rises gradually during generation; the authoritative
-  // `tokenUsage` projection calibrates it at step end.
+  // Live in-flight delta, recomputed every second from the streamed partial:
+  // output is the tokeniser's count of the real output blocks (so it climbs
+  // only while content is generated), input climbs while reasoning is present.
+  // The authoritative `tokenUsage` projection calibrates it at step end.
   const [live, setLive] = useState({ input: 0, output: 0 })
   // Whether the number just flipped from estimate to real (step ended): keep the
   // estimate accent color for a short hold so the transition is visible.
@@ -74,6 +77,7 @@ export function MeterPanel(props: MeterPanelProps): React.ReactNode {
   const wasLive = useRef(false)
   const liveAcc = useRef({ input: 0, output: 0 })
   useEffect(() => {
+    if (!enabled) return
     if (current === undefined) { setLive({ input: 0, output: 0 }); wasLive.current = false; liveAcc.current = { input: 0, output: 0 }; return }
     let open = true
     const poll = (): void => {
@@ -111,7 +115,7 @@ export function MeterPanel(props: MeterPanelProps): React.ReactNode {
     void poll()
     const timer = setInterval(poll, 1000)
     return () => { open = false; clearInterval(timer) }
-  }, [current, readPartial])
+  }, [current, readPartial, enabled])
 
   // Current session from the authoritative projection (same source as all-session).
   const base = current !== undefined && byId !== undefined
@@ -159,9 +163,23 @@ export function MeterPanel(props: MeterPanelProps): React.ReactNode {
 
   const est = inLive + outLive > 0 || justCalibrated
 
+  // Master switch off: render nothing at all. The hooks above still run in the
+  // same order (React rules), but the effect returns early so no polling or
+  // timer stays alive while the meter is hidden.
+  if (!enabled) return null
+
   return (
     <div className={css.panel} style={panelStyle}>
-      <div className={css.head}>{t('title')}</div>
+      <div className={css.head}>
+        <span>{t('title')}</span>
+        <button
+          type="button"
+          className={css.power}
+          title={t('hide')}
+          aria-label={t('hide')}
+          onClick={() => store.set('enabled', false)}
+        >✕</button>
+      </div>
       <div className={css.groupTitle}>{t('current')}</div>
       <div className={css.row}><span className={css.label}>{t('inRow')}</span><span className={css.value + (est ? ` ${css.est}` : '')}>{fmt(inVal)}</span></div>
       <div className={css.row}><span className={css.label}>{t('outRow')}</span><span className={css.value + (est ? ` ${css.est}` : '')}>{fmt(outVal)}</span></div>
